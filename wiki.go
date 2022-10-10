@@ -79,6 +79,7 @@ func editHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "<h1>Editing %s</h1>"+
 		"<form action=\"/save/%s\" method=\"POST\">"+)
 }
+
 func main() {
 	http.HandleFunc("/view/", viewHandler)
 	http.HandleFunc("/edit/", editHandler)
